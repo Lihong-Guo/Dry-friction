@@ -19,6 +19,14 @@ All parameters are in `params.py`. Run the scripts from this folder, in this ord
 
 | 5 | Make_figure1.py, python Make_figure2.py | seconds | `fig01a.pdf/png`, `fig01b.pdf/png` |
 
+| 6 | robustness.py, fitted exponents of D_2 on the windows eps <= 0.05, 0.1, 0.2 (weighted and unweighted least squares, last local slope), the conclusions on
+  each window, the jackknife over the 12 batches, and the numbers used in the "simplified alternatives" paragraph (bias significance, work ratios).
+
+| 7 | model_windows.py, the model computation of Section 5.4 repeated on the three windows and compared with the fitted exponents (about 90 s).
+
+| 8 | refine_check.py, effect of the time step on the fitted exponents (production step eps^2/50 versus the refined step eps^2/400 on the cells eps in {0.2, 0.1, 0.05}),
+  in the "Refinement test" paragraph of Appendix C.
+
 ## Modules
 
 params.py: model, noise, observables, grids, sample sizes, time-step rule and seeds.
